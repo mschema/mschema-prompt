@@ -1,0 +1,14 @@
+{
+  "name": "mschema-prompt",
+  "version": "1.0.0",
+  "description": "Absolutely minimal command line prompting utility with optional `mschema` validation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marak",
+  "license": "MIT",
+  "dependencies": {
+    "read": "^1.0.7"
+  }
+}
