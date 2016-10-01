@@ -4,9 +4,9 @@ Absolutely minimal command line prompting utility with optional `mschema` valida
 
 ## Features
 
-  - ~40 lines of code
+  - ~40 [lines of code](https://github.com/mschema/mschema-prompt/blob/master/index.js)
   - Only one dependency: [read](https://www.npmjs.com/package/read)
-  - Uses optional minimal JSON validator ( a sub-set of `mschema`)
+  - Uses optional minimal JSON validator ( a sub-set of [mschema](https://github.com/mschema/mschema) )
   - Supports asynchronous `conform` validators
   - Allows for custom validation logic using async code
 

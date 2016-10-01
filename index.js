@@ -1,5 +1,4 @@
 var read = require('read');
-var mschema = require('mschema');
 var prompt = function (pdt, opts, cb) {
   // TODO: curry args
   read({ prompt: pdt + ':' , default: opts.default }, cb)
@@ -19,14 +18,6 @@ module.exports = function (handlers, complete) {
       if (err) {
         return complete(err);
       }
-      /*
-      var validate = mschema.validate(d, handlers[p]);
-      if (validate.valid) {
-      } else {
-        console.log(validate);
-        props.push(p);
-        return iterate();
-      }*/
       data[p] = d;
       if (handlers[p].conform) {
         handlers[p].conform(data[p], function(err, val){
