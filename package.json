@@ -1,6 +1,6 @@
 {
   "name": "mschema-prompt",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Absolutely minimal command line prompting utility with optional `mschema` validation.",
   "main": "index.js",
   "scripts": {
