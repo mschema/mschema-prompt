@@ -14,7 +14,11 @@ module.exports = function (handlers, complete) {
       return complete(null, data);
     }
     var p = props.pop();
-    prompt(p, { default: handlers[p].default }, function (err, d) {
+    var label = p;
+    if (typeof handlers[p].label === 'string') {
+      label = handlers[p].label;
+    }
+    prompt(label, { default: handlers[p].default }, function (err, d) {
       if (err) {
         return complete(err);
       }
